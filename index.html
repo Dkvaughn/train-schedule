@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type= "project/css" href="style.css">
+</head>
+<body style="background-color: rgb(62, 66, 70); color: white;">
+
+    <!--Jumbotron-->
+    <div  class = "text-center container">
+    <div style="background-image: url('subway.jpg'); color: white; font-family: 'Times New Roman', Times, serif;" 
+     class="jumbotron">
+        <h1 class="display-4">Train Schedule</h1>
+        <p class="lead">A Comprenhensive Guide to Subway Trains.</p>
+      </div>
+
+      <!--Form-->
+      <form>
+        <div class="form row">
+          <label for="name-input">Train Name:</label>
+          <input type= "text" class="form-control" id="trainName">
+        </div>
+        <div class="form-group row">
+                <label for="email-input">Destination:</label>
+                <input class="form-control" id="email-input" type="email">
+              </div>
+        <div class="form-group row">
+                <label for="age-input">First Train Time (Military):</label>
+                <input class="form-control" id="firstTime" type="n">
+              </div>
+        <div class="form-group row">
+          <label for="comment-input">Frequency (Min):</label>
+          <textarea class="form-control" id="frequency" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" id="addTrain">Submit</button>
+      </form>
+
+
+      <!--test div for data-->
+    <div id="name-here"></div>
+    <div id="email-here"></div>
+    <div id="age-here"></div>
+    <div id="comment-here"></div>
+
+    <br>
+    
+    <!--table-->
+    
+    <div style="color: black;" class="card card-primary">
+            <div class="card-heading">
+              <h3 class="card-title"><strong>Current Employees</strong></h3>
+            </div>
+            <div class="card-body">
+              <table class="table table-hover" id='train-table'>
+                <thead>
+                  <tr>
+                    <th>Train Name:</th>
+                    <th>Destination:</th>
+                    <th>Frequency (Min):</th>
+                    <th>Next Arival</th>
+                    <th>Minutes Away</th>
+                  </tr>
+                </thead>
+                <tbody>
+                </tbody>
+              </table>
+            </div>
+          </div>
+     <script  src="javascript.js"></script>
+     <script>
+     
+     
+     </script>
+</body>
+</body>
+</html>
